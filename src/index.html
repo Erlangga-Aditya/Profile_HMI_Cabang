@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMI Cabang Kediri </title>
+    <link rel="icon" type="image/png" href="<%= require('./assets/images/logo.png') %>">
+    <meta name="description"
+        content="Website Resmi Himpunan Mahasiswa Islam (HMI) Cabang Kediri. Terbinanya insan akademis, pencipta, pengabdi yang bernafaskan Islam.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&family=Poppins:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Custom Preloader (Optional but nice) */
+        #preloader {
+            position: fixed;
+            inset: 0;
+            background: #111111;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loader-logo {
+            width: 80px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-blackSecondary font-body antialiased overflow-x-hidden">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="<%= require('./assets/images/logo.png') %>" alt="Loading" class="loader-logo">
+    </div>
+
+    <%= require('./components/navbar.html').default %>
+
+        <main>
+            <%= require('./components/hero.html').default %>
+                <%= require('./components/about.html').default %>
+                    <%= require('./components/visi-misi.html').default %>
+                        <%= require('./components/struktur.html').default %>
+                            <%= require('./components/proker.html').default %>
+                                <%= require('./components/galeri.html').default %>
+                                    <%= require('./components/berita.html').default %>
+                                        <%= require('./components/kontak.html').default %>
+        </main>
+
+        <%= require('./components/footer.html').default %>
+
+</body>
+
+</html>

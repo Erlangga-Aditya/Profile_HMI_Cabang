@@ -1,0 +1,84 @@
+<nav id="main-navbar"
+  class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent h-16 md:h-20 flex items-center text-white">
+  <div class="container mx-auto px-6 flex justify-between items-center">
+    <!-- Logo & Brand -->
+    <a href="#" class="flex items-center space-x-3 group">
+      <div class="relative">
+        <img src="../assets/images/logo.png" alt="HMI Logo"
+          class="h-9 md:h-12 w-auto group-hover:scale-110 transition-transform duration-300">
+        <div
+          class="absolute inset-0 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <span id="nav-brand-text"
+          class="font-heading font-extrabold text-xl tracking-tight leading-none group-hover:text-primary transition-colors">HMI
+          KEDIRI</span>
+        <span id="nav-tagline-text"
+          class="text-[10px] md:text-[11px] font-bold tracking-[0.2em] text-primary/90 font-body uppercase">digdaya
+          progresif</span>
+      </div>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden lg:flex space-x-10 items-center">
+      <li><a href="#beranda"
+          class="nav-link font-body text-sm font-bold uppercase tracking-widest hover:text-primary transition-all relative py-2">Beranda</a>
+      </li>
+      <li><a href="#profil"
+          class="nav-link font-body text-sm font-bold uppercase tracking-widest hover:text-primary transition-all relative py-2">Profil</a>
+      </li>
+      <li><a href="#struktur"
+          class="nav-link font-body text-sm font-bold uppercase tracking-widest hover:text-primary transition-all relative py-2">Struktur</a>
+      </li>
+      <li><a href="#proker"
+          class="nav-link font-body text-sm font-bold uppercase tracking-widest hover:text-primary transition-all relative py-2">Proker</a>
+      </li>
+      <li><a href="#galeri"
+          class="nav-link font-body text-sm font-bold uppercase tracking-widest hover:text-primary transition-all relative py-2">Galeri</a>
+      </li>
+      <li><a href="#berita"
+          class="nav-link font-body text-sm font-bold uppercase tracking-widest hover:text-primary transition-all relative py-2">Berita</a>
+      </li>
+      <li><a href="#kontak"
+          class="nav-link font-body text-sm font-bold uppercase tracking-widest hover:text-primary transition-all relative py-2">Kontak</a>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn"
+      class="lg:hidden p-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all focus:outline-none active:scale-95">
+      <svg id="menu-icon-svg" class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobile-dropdown"
+    class="lg:hidden absolute top-20 left-4 right-4 bg-white rounded-2xl shadow-2xl hidden border border-gray-100 overflow-hidden transform transition-all duration-300 origin-top scale-95 opacity-0">
+    <ul class="flex flex-col p-4 space-y-1">
+      <li><a href="#beranda"
+          class="mobile-nav-link block p-4 text-lg font-heading font-semibold text-gray-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-all">Beranda</a>
+      </li>
+      <li><a href="#profil"
+          class="mobile-nav-link block p-4 text-lg font-heading font-semibold text-gray-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-all">Profil</a>
+      </li>
+      <li><a href="#struktur"
+          class="mobile-nav-link block p-4 text-lg font-heading font-semibold text-gray-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-all">Struktur</a>
+      </li>
+      <li><a href="#proker"
+          class="mobile-nav-link block p-4 text-lg font-heading font-semibold text-gray-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-all">Program
+          Kerja</a></li>
+      <li><a href="#galeri"
+          class="mobile-nav-link block p-4 text-lg font-heading font-semibold text-gray-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-all">Galeri</a>
+      </li>
+      <li><a href="#berita"
+          class="mobile-nav-link block p-4 text-lg font-heading font-semibold text-gray-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-all">Berita</a>
+      </li>
+      <li><a href="#kontak"
+          class="mobile-nav-link block p-4 text-lg font-heading font-semibold text-gray-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-all font-bold text-primary">Kontak</a>
+      </li>
+    </ul>
+  </div>
+</nav>
