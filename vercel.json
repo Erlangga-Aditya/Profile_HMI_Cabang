@@ -23,6 +23,18 @@
             "dest": "/css/$1"
         },
         {
+            "src": "/robots.txt",
+            "dest": "/robots.txt"
+        },
+        {
+            "src": "/sitemap.xml",
+            "dest": "/sitemap.xml"
+        },
+        {
+            "src": "/google285c8dba93d0e59c.html",
+            "dest": "/google285c8dba93d0e59c.html"
+        },
+        {
             "src": "/(.*)",
             "dest": "/index.html"
         }
