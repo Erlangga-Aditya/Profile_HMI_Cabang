@@ -9,23 +9,34 @@
             }
         }
     ],
-    "cleanUrls": true,
-    "rewrites": [
+    "routes": [
         {
-            "source": "/robots.txt",
-            "destination": "/robots.txt"
+            "src": "/robots.txt",
+            "dest": "/robots.txt"
         },
         {
-            "source": "/sitemap.xml",
-            "destination": "/sitemap.xml"
+            "src": "/sitemap.xml",
+            "dest": "/sitemap.xml"
         },
         {
-            "source": "/google285c8dba93d0e59c.html",
-            "destination": "/google285c8dba93d0e59c.html"
+            "src": "/google285c8dba93d0e59c.html",
+            "dest": "/google285c8dba93d0e59c.html"
         },
         {
-            "source": "/(.*)",
-            "destination": "/index.html"
+            "src": "/assets/(.*)",
+            "dest": "/assets/$1"
+        },
+        {
+            "src": "/js/(.*)",
+            "dest": "/js/$1"
+        },
+        {
+            "src": "/css/(.*)",
+            "dest": "/css/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }
