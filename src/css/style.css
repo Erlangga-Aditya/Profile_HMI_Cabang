@@ -9,8 +9,12 @@
 }
 
 @layer base {
-  html {
+  html, body {
+    @apply overflow-x-hidden;
     scroll-behavior: smooth;
+  }
+  
+  html {
     @apply antialiased;
   }
 }
@@ -77,28 +81,25 @@
 /* Section Transitions */
 /* Navbar Scrolled State Utilities */
 .navbar-scrolled {
-  background-color: rgba(255, 255, 255, 0.9) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(229, 231, 235, 1);
-  color: #1f2937 !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.navbar-scrolled #nav-brand-text {
-  color: #111827 !important;
-}
-
-.navbar-scrolled .nav-link {
-  color: #374151 !important;
+.navbar-scrolled #nav-brand-text,
+.navbar-scrolled .nav-link,
+.navbar-scrolled #nav-tagline-text {
+  color: white !important;
 }
 
 .navbar-scrolled #mobile-menu-btn {
-  background-color: #f3f4f6 !important;
-  color: #1f2937 !important;
-  border-color: #e5e7eb !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 /* Global Nav Link Hover Enhancement */

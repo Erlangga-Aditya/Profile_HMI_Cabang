@@ -26,6 +26,20 @@ export const initAnimations = () => {
     });
 
     // Hero Section GSAP (Parallax / Floating effects)
+    gsap.fromTo('.hero-bg-image',
+        { yPercent: -5 },
+        {
+            yPercent: 5,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '#beranda',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: true,
+            },
+        }
+    );
+
     gsap.to('.hero-particles', {
         y: -100,
         ease: 'none',

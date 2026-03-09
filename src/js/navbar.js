@@ -6,12 +6,12 @@ export const initNavbar = () => {
 
     // Scroll Effect (Transparent to Solid/Glass)
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 20) {
             navbar.classList.add('navbar-scrolled');
-            navbar.classList.remove('bg-transparent', 'py-5', 'text-white');
+            navbar.classList.remove('bg-transparent');
         } else {
             navbar.classList.remove('navbar-scrolled');
-            navbar.classList.add('bg-transparent', 'py-5', 'text-white');
+            navbar.classList.add('bg-transparent');
         }
     });
 
