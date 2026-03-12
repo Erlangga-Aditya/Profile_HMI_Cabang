@@ -14,6 +14,20 @@ export const initAnimations = () => {
         mirror: true,
     });
 
+    // GSAP Hero Entry Animation (Replacing AOS for smoother feel)
+    const heroElements = document.querySelectorAll('.gsap-hero');
+    if (heroElements.length > 0) {
+        gsap.from(heroElements, {
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: 0.15,
+            ease: "power3.out",
+            delay: 0.2,
+            clearProps: "all" // Ensures subsequent interactions (like hover) work correctly
+        });
+    }
+
     // Custom GSAP - Magnetic Buttons / Interactive elements
     const buttons = document.querySelectorAll('a, button');
     buttons.forEach(btn => {
